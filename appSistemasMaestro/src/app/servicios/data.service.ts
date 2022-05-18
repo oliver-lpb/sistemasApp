@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 //fire base
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+
 import { Observable, Subject } from 'rxjs';
 import { cursoModel } from '../model/curso/curso.module';
 
@@ -16,6 +17,10 @@ export class DataService {
 
   guardarCurso(curso:cursoModel):Promise<any>{
     return this.firebase.collection('curso').add(curso);
+  }
+
+  obtenerCurso(tarjeta:string):Observable<any>{
+    return this.firebase.collection('curso', ref => ref.where('creadoPor','==',tarjeta)).snapshotChanges();
   }
 
 
