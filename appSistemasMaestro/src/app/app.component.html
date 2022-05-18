@@ -18,12 +18,15 @@
 </header>
 
 <main>
-  <div class="cabeza">
+  <div class="cabeza" *ngIf="userLogget|async as user">
     <div class="titulo">
-      nombre de usario <!--Texto dinamico-->
+      {{'Mr'+' '+ user.displayName}} <!--Texto dinamico-->
     </div>
     <div class="img">
-      <div class="cuadrado"></div>
+      <div class="cuadrado" >
+        <img src="{{user.photoURL}}" alt="">
+        
+      </div>
     </div>
   </div>
 

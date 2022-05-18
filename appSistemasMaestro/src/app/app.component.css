@@ -62,24 +62,29 @@ main{
 .cabeza{
     border-bottom: 1px solid black;
     width: 99%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
 .cuadrado{
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+
     padding: 0;
     margin: 0;
     margin-right: 20px;
-    background-color: red;
-
-
 }
 
+img{
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    border-radius: 40px;
+    -webkit-box-shadow: 5px 0px 9px 0px rgba(0,0,0,0.37); 
+    box-shadow: 5px 0px 9px 0px rgba(0,0,0,0.37);
+}
 .cuerpo{
     margin-top: 1rem;
 }

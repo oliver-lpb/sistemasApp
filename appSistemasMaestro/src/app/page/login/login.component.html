@@ -6,16 +6,20 @@
             </div>
 
             <div class="caja">
-                <input type="text" autocomplete="off" placeholder="Usario" name="usario" id="">
+                <input [(ngModel)]="usario.tarjeta" type="text" autocomplete="off" placeholder="Usario" name="usario" id="">
             </div>
 
             <div class="caja">
-                <input type="password" placeholder="Contrasenia" name="password" id="">
+                <input [(ngModel)]="usario.email" type="text" autocomplete="off" placeholder="Usario" name="usario" id="">
+            </div>
+
+            <div class="caja">
+                <input [(ngModel)]="usario.pass" type="password" placeholder="Contrasenia" name="password" id="">
             </div >
 
             <div class="caja botones">
-                <button>Ingresar</button>
-                <button>Ingresar con Google</button>
+                <button (click)="ingresar()">Ingresar</button>
+                <button (click)="ingresarGoogle()">Ingresar con Google</button>
             </div>
         </form>
     </div>

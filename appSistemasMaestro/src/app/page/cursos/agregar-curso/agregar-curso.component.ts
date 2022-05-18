@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { cursoModel } from 'src/app/model/curso/curso.module';
+import { AuthService } from 'src/app/servicios/auth.service';
 import { DataService } from 'src/app/servicios/data.service';
 
 @Component({
@@ -12,8 +13,8 @@ import { DataService } from 'src/app/servicios/data.service';
 export class AgregarCursoComponent implements OnInit {
   
   form:FormGroup;
-
-  constructor(private router:Router, private fb:FormBuilder,private dataServices:DataService) { 
+  tarjeta = this.auth.tarjeta;
+  constructor(private router:Router, private fb:FormBuilder,private dataServices:DataService, private auth:AuthService) { 
 
     this.form = this.fb.group({
       
@@ -35,7 +36,7 @@ export class AgregarCursoComponent implements OnInit {
     const curso: cursoModel= {
       //null para que se registre de forma vacia
       nombre: this.form.value.nombre || null,
-      creadoPor: this.form.value.creadoPor|| null,
+      creadoPor: this.tarjeta,
       seccion: this.form.value.seccion|| null,
       materia: this.form.value.materia|| null,
       aula: this.form.value.aula || null,

@@ -56,9 +56,7 @@ input:hover::placeholder{
     color: rgba(0, 0, 255, 0.274);
     
 }
-input:hover{
-    
-}
+
 input:focus{
     outline: none;
     
