@@ -1,0 +1,169 @@
+.slider {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+-webkit-box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+-moz-box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+
+}
+
+.slider ul{
+    display: flex;
+    position: relative;
+    padding: 0;
+    width: 500%;
+    height: 75vh;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function:ease-in-out;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+
+}
+
+.slider img{
+    
+    width: 75%;
+
+}
+
+.titulo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    height: 75%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-direction: row;
+    text-align:start;
+    align-items: flex-end;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1{
+    background: black;
+    font-size:50px;
+    color: white;
+    padding: 10px;
+    width: 75%;
+    
+    
+}
+
+.cuerpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+
+}
+.tarjeta{
+    margin-bottom: 70px;
+}
+main{
+
+    height: 100%;
+    margin: 20px;
+    padding: 5px;
+
+}
+
+h3{
+    font-size: xx-large;
+    margin-bottom: 10px;
+    background: brown;
+    padding: 10px;
+    box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+-webkit-box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+-moz-box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+}
+
+p{
+    font-size: x-large;
+    padding: 5px;
+}
+.servicios{
+    text-align: center;
+    margin: 50px;
+}
+
+h2{
+    font-size: xxx-large;
+    margin-bottom: 40px;
+}
+.nuestrosServicios{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    flex-direction: row
+}
+
+h4{
+    font-size: x-large;
+}
+
+i{
+    color: black;
+    border: 1px solid green;
+    width: auto;
+    height: auto;
+}
+
+.express{
+    width: 200px;
+}
+
+.evento{
+    width: 200px;
+}
+.mesa{
+    width: 200px;
+}
+
+button{
+    width: 65%;
+    border: none;
+    background: rgb(241, 43, 43);
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 23px;
+    box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+-webkit-box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+-moz-box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.39);
+}
+
+
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left:0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}

@@ -1,0 +1,39 @@
+
+<main>
+    
+    <div class="AgregaCurso">
+
+        <form [formGroup]="form" (ngSubmit)="gaurdar()" >
+
+            <div class="entradas">
+                
+                <input id="nombreCurso"  type="text" placeholder="Nombre de la Clase" formControlName="nombre">
+            </div>
+            <div class="entradas">
+                
+                <input  type="text" placeholder="Nombre Creador" formControlName="creadoPor">
+            </div>
+            <div class="entradas">
+                
+                <input  type="text" placeholder="Seccion" formControlName="seccion">
+            </div>
+
+            <div class="entradas">
+                
+                <input type="text" placeholder="Materia" formControlName="materia">
+            </div>
+
+            <div class="entradas">
+                
+                <input type="text" placeholder="Aula" formControlName="aula">
+            </div>
+
+            <div class="botones">
+
+                <button (click)="regresar()">Cancelar</button>
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+
+    </div>
+</main>

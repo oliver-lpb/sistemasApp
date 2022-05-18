@@ -1,0 +1,18 @@
+.agregarCurso{
+    
+    display: flex;
+    justify-content: right;
+    margin-right: 1rem;
+}
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s all;
+}
+
+button:hover{
+    border-radius: 0px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
