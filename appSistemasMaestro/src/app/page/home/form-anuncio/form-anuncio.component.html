@@ -1,0 +1,27 @@
+<main>
+    
+    <div class="contenedor">
+        <form [formGroup]="form" (ngSubmit)="guardar()" action="">
+
+            <div class="caja">
+                <h3>Nuevo Anuncio</h3>
+            </div>
+
+            <div class="caja">
+                <input type="text" formControlName="titulo" placeholder="Titulo del anuncio">
+            </div>
+
+            <div class="caja">
+                <textarea formControlName="descripcion" cols="10" rows="10" placeholder="Descripcion del anuncio"></textarea>
+            </div>
+
+            <div class="caja boton">
+                
+                <button (click)="noAnucio();">Cancelar</button>
+                <button type="submit" class="guarda">Guardar</button>
+            </div>
+        </form>
+    </div>
+
+
+</main>

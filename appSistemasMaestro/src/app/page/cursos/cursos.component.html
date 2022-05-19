@@ -1,5 +1,4 @@
 
-<main>
 
     <div class="agregarCurso">
         <button (click)="agregaCurso()">Agregar Curso</button>
@@ -9,8 +8,34 @@
     
     
 
-    <div *ngFor="let listaCursos of curso">
-        {{listaCursos.nombre}}
+    <main>
+    <div class="listaCurso" *ngFor="let listaCursos of curso">
+        <div class="cajaCurso nombreCurso">
+            {{listaCursos.nombre}}
+        </div>
+
+        <div class="descripcion">
+            
+                    <div class="cajaCurso descripcionCurso">
+                        <h5>Seccion:</h5>
+                        {{listaCursos.seccion}}    
+                    </div>
+            
+                    <div class="cajaCurso descripcionCurso">
+                        <h5>Materia:</h5>
+                        {{listaCursos.materia}}
+                    </div>
+            
+                    <div class="cajaCurso descripcionCurso">
+                        <h5>Aula:</h5>
+                        {{listaCursos.aula}}
+                    </div>
+
+
+        </div>
+        
+        <button class="agregaTarea">Agregar Tarea</button>
+        
     </div>
 
 

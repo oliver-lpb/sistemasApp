@@ -14,3 +14,18 @@
     --estiloTres: 'Bebas Neue', cursive;
     
 }
+
+button{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.356);
+}

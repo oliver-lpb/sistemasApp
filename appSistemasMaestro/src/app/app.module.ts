@@ -19,6 +19,9 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 //formularios
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
+import { FormAnuncioComponent } from './page/home/form-anuncio/form-anuncio.component';
+
+
 
 
 
@@ -43,6 +46,7 @@ const appRouters:Routes=[
     CursosComponent,
     CalificacionesComponent,
     AgregarCursoComponent,
+    FormAnuncioComponent,
   ],
   imports: [
     BrowserModule,

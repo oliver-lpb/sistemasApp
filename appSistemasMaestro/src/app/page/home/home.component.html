@@ -6,17 +6,23 @@
         <h1>Escuela para tomar agua de coco todos los dias {{tarjeta}} </h1>
     </div>
 
+    
+    <div class="nuevoAnuncio">
+        <button (click)="nuevoAnuncio()">Nuevo Anucio</button>
+    </div>
     <div class="cuadroDeInformacion">
-        <div class="cuadros anuncios">
-            <h3>Anucios</h3>
-            <h4>Titulo de anucio</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias 
-                suscipit facere ullam laboriosam nobis, 
-                soluta saepe laborum ab,
-                facilis maiores qui consectetur sit voluptas maxime, 
-                asperiores est quam ratione?</p>
-            <button>Nuevo Anucio</button>
+        
+        <div class="cuadros anuncios" >
+
+            <div class="anuncio" *ngFor="let listaCursos of anuncios">
+                
+                            <h3> Anucios </h3>
+                            <h4>{{listaCursos.titulo}}</h4>
+                            <p> {{listaCursos.descripcion}} </p>
+                            
+            </div>
         </div>
+        
         <div class="cuadros calendario">
             <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FGuatemala&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showTitle=0&showNav=0&src=Y19ldXZodTl0ajhlMGszaDI2ODMxZXFtMWhrNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E" style="border-width:0" frameborder="0" scrolling="no"></iframe>
         </div>
@@ -27,6 +33,13 @@
             
 
         </div>
+        
+        
     </div>
+
+    <div *ngIf="formAnuncio">
+        <app-form-anuncio (enviar)="recibir($event)"></app-form-anuncio>    
+    </div>
+
 
 </div>

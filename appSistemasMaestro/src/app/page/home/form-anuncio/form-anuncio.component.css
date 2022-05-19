@@ -1,0 +1,56 @@
+main{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    background: rgba(70, 70, 70, 0.322);
+}
+
+
+
+form{
+    
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 0px 9px 0px rgba(0,0,0,0.37); 
+    box-shadow: 5px 0px 9px 0px rgba(0,0,0,0.37);
+}
+
+.caja{
+    padding: 1rem;
+    width: 100%;
+}
+
+h3{
+    font-size: x-large;
+    text-align: center;
+}
+input{
+    font-size: x-large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+textarea{
+    width: 85%;
+    padding: 10px;
+}
+
+.boton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.guarda{
+    border: 1px solid rgba(0, 255, 21, 0.329);
+}

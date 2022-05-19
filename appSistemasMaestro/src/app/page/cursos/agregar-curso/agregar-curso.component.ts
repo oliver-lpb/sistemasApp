@@ -50,6 +50,8 @@ export class AgregarCursoComponent implements OnInit {
       },error =>{
         console.log(error);
       })
-    
+      this.router.navigate(['cursos']);
   }
+
+
 }
