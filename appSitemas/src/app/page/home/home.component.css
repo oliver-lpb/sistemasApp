@@ -1,0 +1,72 @@
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+img{
+    width: auto;
+}
+
+h1{
+    margin-top: 2rem;
+    font-family: 'Macondo', cursive;
+    font-size: xx-large;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.363);
+    border-radius: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.cuadroDeInformacion{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 40% 40% 10% ;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+
+
+.anuncios{
+
+    background-color: #0ECC43;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%230ECC43' width='11' height='11'/%3E%3Crect fill='%2324cb3e' x='10' width='11' height='11'/%3E%3Crect fill='%2332c939' y='10' width='11' height='11'/%3E%3Crect fill='%233cc833' x='20' width='11' height='11'/%3E%3Crect fill='%2345c72e' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%234cc628' y='20' width='11' height='11'/%3E%3Crect fill='%2353c421' x='30' width='11' height='11'/%3E%3Crect fill='%2359c31a' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%235fc111' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%2365c005' y='30' width='11' height='11'/%3E%3Crect fill='%236abf00' x='40' width='11' height='11'/%3E%3Crect fill='%236fbd00' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%2373bc00' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%2378ba00' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%237cb900' y='40' width='11' height='11'/%3E%3Crect fill='%2380b700' x='50' width='11' height='11'/%3E%3Crect fill='%2384b600' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%2388b400' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%238cb200' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%238fb100' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%2393af00' y='50' width='11' height='11'/%3E%3Crect fill='%2397ad00' x='60' width='11' height='11'/%3E%3Crect fill='%239aac00' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%239daa00' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23a1a800' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23a4a700' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23a7a500' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23aaa300' x='70' width='11' height='11'/%3E%3Crect fill='%23ada100' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23b09f00' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23b39d00' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23b69b00' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23b99900' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23bb9700' x='80' width='11' height='11'/%3E%3Crect fill='%23be9500' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23c19300' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23c39100' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23c68f00' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23c88d00' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23ca8b00' x='90' width='11' height='11'/%3E%3Crect fill='%23cd8900' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23cf8600' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23d18400' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23d48200' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23d68000' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23d87d00' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23da7b00' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23dc7800' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23de7600' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23df7300' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23e17100' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23e36e00' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23e46c00' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23e66900' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23e86700' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23e96400' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ea6102' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ec5f0a' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23ed5c11' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EE5916' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 2rem;
+    -webkit-box-shadow: 5px 0px 9px 0px rgba(0,0,0,0.37); 
+    box-shadow: 5px 0px 9px 0px rgba(0,0,0,0.37);
+    border-radius: 5px;
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 5px 0px 9px 0px rgba(0,0,0,0.37); 
+    box-shadow: 5px 0px 9px 0px rgba(0,0,0,0.37);
+    border-radius: 5px;
+}
+
+.redesSociales{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img{
+    width: 35%;
+    margin: 10px;
+    
+    
+}

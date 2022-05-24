@@ -1,0 +1,60 @@
+
+.listaCurso{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-box-shadow: 0px 0px 17px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px -7px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.cajaCurso{
+    margin: 10px;
+    padding: 1rem;
+}
+
+
+.nombreCurso{
+    background: linear-gradient(123deg, #FFFCAC 0%, #FFFFFF 67%), linear-gradient(180deg, #D8D8D8 0%, #6B0000 100%), linear-gradient(142deg, #F9F5F0 0%, #F9F5F0 33%, #F2EAD3 calc(33% + 1px), #F2EAD3 56%, #F4991A calc(56% + 1px), #F4991A 62%, #321313 calc(62% + 1px), #321313 100%);
+    background-blend-mode: multiply, overlay, normal;
+    padding: 1rem;
+    font-size: x-large;
+    display: flex;
+    align-items: flex-end;
+}
+
+h3{
+    margin-right: 2rem;
+
+}
+
+h5{
+    font-family: var(--estiloUno);
+    font-size: large;
+    margin-right: 1rem;
+}
+
+.descripcionCurso{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+p{
+    align-content: center;
+    justify-content: end;
+    
+}
+
+.agregaTarea{
+    margin: 1rem;
+}
+
+.boton{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}

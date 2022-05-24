@@ -1,0 +1,21 @@
+<main>
+    <h3>Entrega Tarea</h3>
+
+    <div class="form" >
+        <form [formGroup]="form" (ngSubmit)="guardaTarea()" >
+            <div class="caja">
+                <input type="text" placeholder="Agregando la Tarea" formControlName="tarea">
+            </div>
+            <div class="caja">
+                <input type="text" placeholder="Agregando la Tarea" formControlName="descripcion">
+            </div>
+
+                
+            
+            <div class="botones">
+                <button (click)="regresar()">Cancelar</button>
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+</main>

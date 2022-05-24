@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+*{
+    font-family: 'Radio Canada', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --colorMenu: #8f8100;
+    --estiloUno: 'Zilla Slab', serif;
+    --estiloDos: 'Macondo', cursive;
+    --estiloTres: 'Bebas Neue', cursive;
+    
+}
+
+button{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.356);
+}

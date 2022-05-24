@@ -1,0 +1,33 @@
+
+    <main>
+    <div class="listaCurso" *ngFor="let listaCursos of tarea">
+        <div class="cajaCurso nombreCurso">
+            <h3>Tarea</h3>
+            {{listaCursos.titulo}}
+        </div>
+
+        <div class="descripcion">
+            
+                    <div class="cajaCurso descripcionCurso">
+                        <h5>Descripcion:</h5>
+                        <p>
+                            {{listaCursos.descripcion}}
+                        </p>
+                    </div>
+            
+                    <div class="cajaCurso descripcionCurso">
+                        <h5>Fecha de Entrega Limite:</h5>
+                        {{listaCursos.fechaEntrega}}
+                    </div>
+        </div> 
+        <div class="boton">
+            <button [routerLink]="['/entrega',listaCursos.id,tarjeta]">Entregar</button>
+        </div>
+        
+    
+    </div>
+
+
+    
+
+</main>
