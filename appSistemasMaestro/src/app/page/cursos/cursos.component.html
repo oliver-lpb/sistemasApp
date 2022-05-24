@@ -34,7 +34,11 @@
 
         </div>
         
-        <button class="agregaTarea">Agregar Tarea</button>
+        <button class="agregaTarea"  [routerLink]="['/nuevaTarea',listaCursos.materia]" [queryParams]="{accion:'1'}">AgregarTarea</button>
+        
+        <!--
+        <button class="agregaTarea"  [routerLink]="['/nuevaTarea']">Agregar Tarea</button>
+        -->
         
     </div>
 

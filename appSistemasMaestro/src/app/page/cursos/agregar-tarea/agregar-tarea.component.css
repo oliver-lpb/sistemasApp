@@ -1,0 +1,48 @@
+main{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.AgregaCurso{
+    border-radius: 5px;
+    padding: 1rem;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.33); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.33);
+
+}
+
+.entradas input{
+    padding: 1rem;
+    margin: 1rem;
+    width: 30rem;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.445);
+    transition: 0.3s;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    background-color: rgba(127, 255, 212, 0.493);
+}

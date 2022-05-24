@@ -24,6 +24,7 @@ export class CursosComponent implements OnInit {
 
   agregaCurso(){
     this.router.navigate(['agregarcurso']);
+
   }
 
   listaCursos(){

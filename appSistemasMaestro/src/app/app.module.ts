@@ -20,10 +20,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { FormAnuncioComponent } from './page/home/form-anuncio/form-anuncio.component';
-
-
-
-
+import { AgregarTareaComponent } from './page/cursos/agregar-tarea/agregar-tarea.component';
 
 const appRouters:Routes=[
 
@@ -32,8 +29,7 @@ const appRouters:Routes=[
   {path:'cursos',component:CursosComponent},
   {path:'notas',component:CalificacionesComponent},
   {path:'agregarcurso',component:AgregarCursoComponent},
-  
-  
+  {path:'nuevaTarea/:id',component:AgregarTareaComponent},
   {path:'**',component:ErrorComponent}//debe de estar siempre de ultimo en la lista de rutas
 ];
 
@@ -47,6 +43,8 @@ const appRouters:Routes=[
     CalificacionesComponent,
     AgregarCursoComponent,
     FormAnuncioComponent,
+    AgregarTareaComponent,
+    AgregarTareaComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +52,7 @@ const appRouters:Routes=[
     RouterModule.forRoot(appRouters),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    AngularFirestoreModule,
+    AngularFireAuthModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

@@ -1,0 +1,27 @@
+
+<main>
+    
+    <div class="AgregaCurso">
+
+        <form [formGroup]="form" (ngSubmit)="agregarTarea()" >
+
+            <div class="entradas">
+                <input id="nombreCurso"  type="text" placeholder="Tarea" formControlName="titulo">
+            </div>
+
+            <div class="entradas">    
+                <textarea name="" id="" cols="30" rows="10" formControlName="descripcion"></textarea>
+                
+            </div>
+
+            <div class="entradas">
+                <input type="date" placeholder="Materia" formControlName="fechaEntrega">
+            </div>
+            
+            <div class="botones">
+                <button (click)="regresar()">Cancelar</button>
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+</main>
