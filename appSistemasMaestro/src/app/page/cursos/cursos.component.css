@@ -55,3 +55,8 @@ h5{
 .agregaTarea{
     margin: 1rem;
 }
+
+.agregarCurso button{
+    background-color: rgba(0, 0, 255, 0.356);
+    font-size: large;
+}

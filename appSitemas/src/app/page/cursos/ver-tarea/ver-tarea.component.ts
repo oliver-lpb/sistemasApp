@@ -13,8 +13,8 @@ import { DataService } from 'src/app/service/data.service';
 export class VerTareaComponent implements OnInit {
   
   indice:string='';
-  tarjeta = this.auth.tarjeta;
   tarea:tareaModel[]=[];
+  tarjeta = this.auth.tarjeta;
   
   constructor(private auth:AuthService,private router:Router,private route:ActivatedRoute,private data:DataService) { }
 

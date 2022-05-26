@@ -5,6 +5,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Observable, Subject } from 'rxjs';
 import { anuncioModel } from '../model/anuncio.module';
 import { cursoModel } from '../model/curso/curso.module';
+import { entregaTareaModel } from '../model/entregaTarea.model';
 import { tareaModel } from '../model/tarea.model';
 
 //modelos
@@ -37,6 +38,12 @@ export class DataService {
 
   guardaTarea(Nuevatarea:tareaModel):Promise<any>{
     return this.firebase.collection('tareas').add(Nuevatarea);
+  }
+
+  
+  getEntregados(buscador:string):Observable<any>{
+    console.log('se captura en el servicio '+ buscador);
+    return this.firebase.collection("tareaEntregadas", ref => ref.where("cursoId", "==", buscador)).snapshotChanges();
   }
 
 //anuncios...........................................................................................................................

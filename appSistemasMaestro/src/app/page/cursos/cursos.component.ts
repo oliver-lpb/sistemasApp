@@ -27,6 +27,7 @@ export class CursosComponent implements OnInit {
 
   }
 
+  
   listaCursos(){
     
     this.data.obtenerCurso(this.tarjeta).subscribe(doc=>{

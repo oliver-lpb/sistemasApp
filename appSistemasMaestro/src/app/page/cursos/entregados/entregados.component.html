@@ -1,0 +1,24 @@
+
+
+{{buscador}}
+
+<div class="listaCurso" *ngFor="let listaCursos of entregas">
+    <div class="cajaCurso nombreCurso">
+        {{listaCursos.tarea}}
+    </div>
+
+        <div class="descripcion">
+        
+                <div class="cajaCurso descripcionCurso">
+                    <h5>Seccion:</h5>
+                    {{listaCursos.creadoPor}}    
+                </div>
+        
+                <div class="cajaCurso descripcionCurso">
+                    <h5>Materia:</h5>
+                    {{listaCursos.descripcion}}
+                    {{listaCursos.cursoId}}
+                </div>
+        </div>
+
+</div>

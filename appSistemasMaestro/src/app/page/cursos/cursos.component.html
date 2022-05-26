@@ -14,7 +14,7 @@
             {{listaCursos.nombre}}
         </div>
 
-        <div class="descripcion">
+            <div class="descripcion">
             
                     <div class="cajaCurso descripcionCurso">
                         <h5>Seccion:</h5>
@@ -30,16 +30,9 @@
                         <h5>Aula:</h5>
                         {{listaCursos.aula}}
                     </div>
-
-
-        </div>
-        
-        <button class="agregaTarea"  [routerLink]="['/nuevaTarea',listaCursos.materia]" [queryParams]="{accion:'1'}">AgregarTarea</button>
-        
-        <!--
-        <button class="agregaTarea"  [routerLink]="['/nuevaTarea']">Agregar Tarea</button>
-        -->
-        
+            </div>
+        <button class="agregaTarea"  [routerLink]="['/nuevaTarea',listaCursos.id]" [queryParams]="{accion:'1'}">AgregarTarea</button>
+        <button class="agregaTarea"  (click)="curso()" >Ver Entregas</button>
     </div>
 
 

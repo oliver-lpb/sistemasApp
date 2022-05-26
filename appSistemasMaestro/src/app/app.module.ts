@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { FormAnuncioComponent } from './page/home/form-anuncio/form-anuncio.component';
 import { AgregarTareaComponent } from './page/cursos/agregar-tarea/agregar-tarea.component';
+import { EntregadosComponent } from './page/cursos/entregados/entregados.component';
 
 const appRouters:Routes=[
 
@@ -30,6 +31,7 @@ const appRouters:Routes=[
   {path:'notas',component:CalificacionesComponent},
   {path:'agregarcurso',component:AgregarCursoComponent},
   {path:'nuevaTarea/:id',component:AgregarTareaComponent},
+  {path:'entregas',component:EntregadosComponent},
   {path:'**',component:ErrorComponent}//debe de estar siempre de ultimo en la lista de rutas
 ];
 
@@ -44,7 +46,7 @@ const appRouters:Routes=[
     AgregarCursoComponent,
     FormAnuncioComponent,
     AgregarTareaComponent,
-    AgregarTareaComponent,
+    EntregadosComponent
   ],
   imports: [
     BrowserModule,

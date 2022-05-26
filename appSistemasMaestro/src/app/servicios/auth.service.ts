@@ -9,6 +9,7 @@ import firebase from 'firebase/compat/app'
 export class AuthService {
 
   tarjeta:string='32';
+  idCurso:string='';
 
   constructor(private authFire:AngularFireAuth) { }
 
