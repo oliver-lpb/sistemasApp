@@ -33,7 +33,7 @@ const appRouters:Routes=[
   {path:'agregarcurso',component:AgregarCursoComponent},
   {path:'nuevaTarea/:id',component:AgregarTareaComponent},
   {path:'entregas/:tarea',component:EntregadosComponent},
-  {path:'calificacion/:id',component:CalificacionComponent},
+  {path:'calificacion/:id/:cursoId',component:CalificacionComponent},
   {path:'**',component:ErrorComponent}//debe de estar siempre de ultimo en la lista de rutas
 ];
 

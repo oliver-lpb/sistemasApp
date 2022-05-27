@@ -25,6 +25,10 @@ export class DataService {
   obtenerTarea(tarjeta:string,indice:string):Observable<any>{
     return this.firebase.collection('tareas', ref => ref.where( 'creadoPor','==',tarjeta).where('curso','==',indice)).snapshotChanges();
   }
+
+  obtienePunteo(tarjeta:string):Observable<any>{
+    return this.firebase.collection('calificacion', ref => ref.where( 'creadoPor','==',tarjeta)).snapshotChanges();
+  }
   
 //obtieneAnuncio..........................................................................................................................
   obtenerAnuncio(tarjeta:string):Observable<any>{

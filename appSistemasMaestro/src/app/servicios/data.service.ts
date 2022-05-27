@@ -4,6 +4,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { Observable, Subject } from 'rxjs';
 import { anuncioModel } from '../model/anuncio.module';
+import { califcModel } from '../model/calificacion.model';
 import { cursoModel } from '../model/curso/curso.module';
 import { entregaTareaModel } from '../model/entregaTarea.model';
 import { tareaModel } from '../model/tarea.model';
@@ -47,7 +48,7 @@ export class DataService {
   }
 
   //calificacion
-  guardaCalidicacion(calificacion:anuncioModel):Promise<any>{
+  guardaCalidicacion(calificacion:califcModel):Promise<any>{
     return this.firebase.collection('calificacion').add(calificacion);
   }
 

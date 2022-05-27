@@ -1,22 +1,26 @@
-{{buscador}}
-
-<div class="contenedor">
-<div class="form">
-
-    <form [formGroup]="form" (ngSubmit)="agregarCalif()">
-
-        <div class="caja">
-            <label for="">Puntuacion</label>
-            <input type="text" name="" id="" formControlName="punteo">
+<main>
+    <div class="contenedor">
+        <h3>
+            Tarea: {{buscador}}
+        </h3>
+        
+        <div class="form">
+            <form [formGroup]="form" (ngSubmit)="agregarCalif()">
+                <div class="caja">
+                    <label for="">Puntuacion</label>
+                    <input type="number" name="" id="" formControlName="punteo">
+                </div>
+            
+                <div class="caja">
+                    <label for="">Comentario</label>
+                    <input class="comentario" type="text" name="" id="" formControlName="comentario">
+                </div>
+            
+                <div class="botones">
+                    <button (click)="regresar()">Cancelar</button>
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>        
         </div>
-
-        <div class="caja">
-            <label for="">Comentario</label>
-            <input type="text" name="" id="" formControlName="punteo">
-        </div>
-
-    </form>
-    
-</div>
-    
-</div>
+    </div>
+</main>
