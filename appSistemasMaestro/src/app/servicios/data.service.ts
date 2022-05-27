@@ -46,6 +46,11 @@ export class DataService {
     return this.firebase.collection("tareaEntregadas", ref => ref.where("cursoId", "==", buscador)).snapshotChanges();
   }
 
+  //calificacion
+  guardaCalidicacion(calificacion:anuncioModel):Promise<any>{
+    return this.firebase.collection('calificacion').add(calificacion);
+  }
+
 //anuncios...........................................................................................................................
   guardaAnuncio(anuncio:anuncioModel):Promise<any>{
     return this.firebase.collection('anuncio').add(anuncio);

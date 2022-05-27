@@ -22,6 +22,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { FormAnuncioComponent } from './page/home/form-anuncio/form-anuncio.component';
 import { AgregarTareaComponent } from './page/cursos/agregar-tarea/agregar-tarea.component';
 import { EntregadosComponent } from './page/cursos/entregados/entregados.component';
+import { CalificacionComponent } from './page/cursos/entregados/calificacion/calificacion.component';
 
 const appRouters:Routes=[
 
@@ -32,6 +33,7 @@ const appRouters:Routes=[
   {path:'agregarcurso',component:AgregarCursoComponent},
   {path:'nuevaTarea/:id',component:AgregarTareaComponent},
   {path:'entregas/:tarea',component:EntregadosComponent},
+  {path:'calificacion/:id',component:CalificacionComponent},
   {path:'**',component:ErrorComponent}//debe de estar siempre de ultimo en la lista de rutas
 ];
 
@@ -46,7 +48,8 @@ const appRouters:Routes=[
     AgregarCursoComponent,
     FormAnuncioComponent,
     AgregarTareaComponent,
-    EntregadosComponent
+    EntregadosComponent,
+    CalificacionComponent
   ],
   imports: [
     BrowserModule,
