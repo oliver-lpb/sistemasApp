@@ -1,0 +1,42 @@
+main{
+    
+}
+
+.listaCurso{
+    margin: 1rem;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.17); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.17);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.cajaCurso{
+
+    margin: 1rem;
+}
+
+.nombreCurso{
+    display: flex;
+    align-items: center;
+}
+.estudiente{
+    display: flex;
+    align-items: center;
+}
+
+.descripcion{
+    display: flex;
+    font-size: x-large;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+
+
+}
+
+.descripcionCurso{
+    font-size: large;
+}
+
+
+
+

@@ -1,13 +1,6 @@
-
-
     <div class="agregarCurso">
         <button (click)="agregaCurso()">Agregar Curso</button>
     </div>
-
-    
-    
-    
-
     <main>
     <div class="listaCurso" *ngFor="let listaCursos of curso">
         <div class="cajaCurso nombreCurso">
@@ -31,8 +24,8 @@
                         {{listaCursos.aula}}
                     </div>
             </div>
-        <button class="agregaTarea"  [routerLink]="['/nuevaTarea',listaCursos.id]" [queryParams]="{accion:'1'}">AgregarTarea</button>
-        <button class="agregaTarea"  (click)="curso()" >Ver Entregas</button>
+        <button class="agregaTarea"  [routerLink]="['/nuevaTarea',listaCursos.nombre]" [queryParams]="{accion:'1'}">AgregarTarea</button>
+        <button class="agregaTarea" [routerLink]="['/entregas',listaCursos.nombre]" [queryParams]="{accion:'1'}">Ver Entregas</button>
     </div>
 
 

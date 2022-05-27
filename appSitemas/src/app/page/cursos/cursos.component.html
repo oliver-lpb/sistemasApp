@@ -20,6 +20,6 @@
                         {{listaCursos.aula}}
                     </div>
         </div>
-        <button class="agregaTarea"  [routerLink]="['/tarea',listaCursos.id]" [queryParams]="{accion:'1'}">Ver Tareas</button>
+        <button class="agregaTarea"  [routerLink]="['/tarea',listaCursos.nombre]" [queryParams]="{accion:'1'}">Ver Tareas</button>
     </div>
 </main>

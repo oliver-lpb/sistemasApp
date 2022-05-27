@@ -20,11 +20,9 @@ export class EntregadosComponent implements OnInit {
   constructor(private auth:AuthService, private router:Router,private route:ActivatedRoute,private data:DataService) { }
 
   ngOnInit(): void {
-    this.listaEntregados();
     
-    this.buscador=this.route.snapshot.params['id'];
-
-    console.log('se captura '+this.buscador)
+    this.buscador=this.route.snapshot.params['tarea'];
+    this.listaEntregados();
   }
 
   listaEntregados(){
